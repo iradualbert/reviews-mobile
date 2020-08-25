@@ -19,14 +19,17 @@ const Home = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <FlatList
+                style={{ width: "100%" }}
                 data={reviews}
-                renderItem={({ item }) => (
-                    <TouchableOpacity style={styles.item}>
-                        <Text style={styles.titleText}>{item.title}</Text>
+                renderItem={({ item, index }) => (
+                    <TouchableOpacity 
+                      style={styles.item}
+                      onPress={() => navigation.navigate('ReviewDetails', item)}
+                    >
+                        <Text style={styles.titleText}>{`${index + 1} -  ${item.title}`}</Text>
                     </TouchableOpacity>
                 )}
             />
-            <Button title="View Rating" onPress={() => handlePress("ReviewDetails")} />
             <Button title="About" onPress={() => handlePress("About")} />
         </View>
     )
