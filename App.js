@@ -1,11 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState }from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import * as Font from 'expo-font';
-// screens
-import Home from "./screens/Home";
-import { globalStyles as styles } from './styles/global';
-import Navigator from "./routes/HomeStack";
+
+import { globalStyles as styles } from './src/styles/global';
+import Navigator from "./src/routes/homeStack";
 
 const getFonts = () => {
   return Font.loadAsync({

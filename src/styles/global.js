@@ -8,6 +8,13 @@ export const globalStyles = StyleSheet.create({
         justifyContent: 'center',
         padding: 20,
     },
+    item: {
+        borderColor: "black",
+        borderWidth: 1,
+        borderStyle: "dashed",
+        padding: 5,
+        marginBottom: 10
+    },
     titleText: {
         fontFamily: "nunito-bold",
         fontSize: 20,
