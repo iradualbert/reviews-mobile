@@ -1,17 +1,15 @@
 import 'react-native-gesture-handler';  // must be included, otherwise navigation stack will throw an error
 import { createStackNavigator } from "react-navigation-stack";
+import React from "react"; 
 import ReviewDetails from "../screens/ReviewDetails";
-import About from "../screens/About";
-
+import Home from "../screens/Home";
+import Header from "../components/header";
 
 const screens = {
     Home: {
-        screen: About,
+        screen: Home,
         navigationOptions: {
-            title: 'About FeedPark',
-            //  headerStyle: {
-            //      backgroundColor: "#eee"
-            //  }
+            headerTitle: () => <Header />
         }
     },
     ReviewDetails: {

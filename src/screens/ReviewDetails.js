@@ -8,7 +8,7 @@ const ReviewDetails = ({navigation}) => {
     const rating = navigation.getParam('rating');
     const body = navigation.getParam('body');
     useEffect(() => {
-        console.log(title)
+        // console.log(title)
         
     }, [])
     return (

@@ -1,14 +1,13 @@
 import 'react-native-gesture-handler';  // must be included, otherwise navigation stack will throw an error
 import { createStackNavigator } from "react-navigation-stack";
-import Home from "../screens/Home";
 import About from "../screens/About";
 
 
 const screens = {
     About: {
-        screen: Home,
+        screen: About,
         navigationOptions: {
-            title: 'FeedPark',
+            title: 'About',
         }
     },
    
@@ -27,3 +26,13 @@ const AboutStack = createStackNavigator(screens, {
 });
 export default AboutStack;
 
+
+
+// ,
+// "react-navigation": "^4.4.0",
+//     "react-navigation-drawer": "^2.5.0",
+//         "react-navigation-stack": "^2.8.2",
+//             "react-native-gesture-handler": "~1.6.0",
+//                 "react-native-safe-area-context": "~3.0.7",
+//                     "@react-native-community/masked-view": "0.1.10",
+//                         "react-native-reanimated": "~1.9.0"
